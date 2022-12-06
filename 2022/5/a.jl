@@ -1,5 +1,3 @@
-include("utils.jl")
-
 real_input = readchomp("input.txt")
 
 struct Movement
