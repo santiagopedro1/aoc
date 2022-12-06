@@ -1,7 +1,7 @@
 function solution_part1()
     scores = Dict(['A' => 1, 'B' => 2, 'C' => 3, 'X' => 1, 'Y' => 2, 'Z' => 3])
     score = 0
-    for line in eachsplit(readchomp("test.txt"), '\n')
+    for line in eachsplit(readchomp("input.txt"), '\n')
         opponent_value, mine_value = scores[line[1]], scores[line[3]]
         if opponent_value == 3 && mine_value == 1
             opponent_value = 0
